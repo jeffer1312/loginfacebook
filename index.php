@@ -17,10 +17,23 @@
                 <h2>facebook</h2>
             </div>
             <!-- logo -->
-            <div class="form-login">
+            <form method="post" class="form-login">
+                <div class="form-element">
+                    <p>Email ou telefone</p>
+                    <input type="email">
+                </div>
+                <div class="form-element">
+                    <p>Senha</p>
+                    <input type="password">
+                </div>
+                <div class="form-element">
+                    <input type="submit" name="acao" value="Entrar">
+                </div>
+            </form>
 
-            </div>
-            <!-- form login -->
+
+            <!-- form-login -->
+            <div class="clear"></div>
         </div>
         <!-- center -->
     </header>
