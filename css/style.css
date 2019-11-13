@@ -1,62 +1,214 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        
-        html,
-        body {
-            height: 100%;
-        }
-        
-        header {
-            background-color: rgb(67, 82, 151);
-            padding: 8px 0;
-        }
-        
-        .logo {
-            float: left;
-        }
-        
-        .logo h2 {
-            color: white;
-            font-size: 40px;
-        }
-        
-        .center {
-            max-width: 1100px;
-            padding: 0 2%;
-            margin: 0 auto;
-        }
-        
-        .clear {
-            clear: both;
-        }
-        
-        form.form-login {
-            float: right;
-        }
-        
-        .form-element p {
-            color: white;
-            font-size: 14px;
-            font-weight: normal;
-        }
-        
-        .form-login .form-element {
-            display: inline-block;
-            padding: 0 7px;
-        }
-        
-        .form-element input[type=submit] {
-            background-color: rgb(74, 95, 177);
-            cursor: pointer;
-            border: 2px solid rgb(49, 66, 124);
-            color: white;
-            padding: 3px 5px;
-        }
-        
-        .form-element input[type=submit]:hover {
-            background: rgb(49, 66, 124);
-        }
+       /*reset da pagina*/
+       
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       
+       html,
+       body {
+           height: 100%;
+       }
+       /* fim reset*/
+       /*header*/
+       
+       header {
+           background-color: rgb(67, 82, 151);
+           padding: 8px 0;
+       }
+       
+       .logo {
+           float: left;
+       }
+       
+       .logo h2 {
+           color: white;
+           font-size: 40px;
+       }
+       
+       .container {
+           max-width: 1100px;
+           padding: 0 2%;
+           margin: 0 auto;
+       }
+       
+       .clear {
+           clear: both;
+       }
+       
+       form.form-login {
+           float: right;
+       }
+       
+       .form-element p {
+           color: white;
+           font-size: 14px;
+           font-weight: normal;
+       }
+       
+       .form-login .form-element {
+           display: inline-block;
+           padding: 0 7px;
+       }
+       
+       .form-element input[type=submit] {
+           background-color: rgb(74, 95, 177);
+           cursor: pointer;
+           border: 2px solid rgb(49, 66, 124);
+           color: white;
+           padding: 3px 5px;
+       }
+       
+       .form-element input[type=submit]:hover {
+           background: rgb(49, 66, 124);
+       }
+       /* fim header*/
+       /*contet*/
+       
+       section.content {
+           background-color: rgb(233, 235, 238);
+           min-height: 700px;
+       }
+       /*opçoes do flex*/
+       
+       .flex {
+           display: flex;
+           flex-wrap: nowrap;
+       }
+       
+       .no-wrap {
+           flex-wrap: nowrap;
+       }
+       
+       .flex-wrap {
+           flex-wrap: wrap;
+       }
+       
+       .row {
+           flex-direction: row;
+       }
+       
+       .row-reverse {
+           flex-direction: row-reverse;
+       }
+       
+       .column {
+           flex-direction: column;
+       }
+       
+       .column-reverse {
+           flex-direction: column-reverse;
+       }
+       /*fim flex*/
+       
+       .w50 {
+           width: 50%;
+       }
+       
+       .img {
+           margin-right: 15px;
+       }
+       
+       .img img {
+           width: 151px;
+           height: 160px;
+           margin-top: 20px;
+           cursor: pointer;
+       }
+       
+       .img p {
+           position: relative;
+           top: -4px;
+           text-align: center;
+           background-color: white;
+           padding: 20px 0;
+           width: 151px;
+       }
+       
+       .add:hover {
+           -webkit-box-shadow: inset 10px 10px 29px -15px rgba(0, 0, 0, 0.75);
+           -moz-box-shadow: inset 10px 10px 29px -15px rgba(0, 0, 0, 0.75);
+           box-shadow: inset 10px 10px 29px -15px rgba(0, 0, 0, 0.75);
+       }
+       
+       .add {
+           cursor: pointer;
+           background-color: rgba(245, 246, 247);
+           width: 151px;
+           height: 160px;
+           margin-top: 20px;
+       }
+       
+       .add p {
+           position: relative;
+           top: 112px;
+           text-align: center;
+           background-color: white;
+           padding: 20px 0;
+           width: 150px;
+       }
+       
+       .add h2 {
+           color: blue;
+           font-size: 40px;
+           position: relative;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           text-align: center;
+       }
+       
+       .recent h2 {
+           margin-top: 20px;
+           font-size: 28px;
+       }
+       
+       .recent p {
+           font-size: 18px;
+       }
+       
+       .cadastro {
+           padding-top: 15px;
+           margin: 0 auto;
+       }
+       
+       .cadastro input[type=text] {
+           margin-right: 10px;
+           margin-bottom: 10px;
+           padding-left: 5px;
+           width: 194px;
+           height: 40px;
+           border-radius: 3px;
+       }
+       
+       .cadastro input[type=email] {
+           padding-left: 5px;
+           margin-bottom: 10px;
+           width: 79%;
+           height: 40px;
+           border-radius: 3px;
+       }
+       
+       .cadastro input[type=password] {
+           padding-left: 5px;
+           width: 79%;
+           height: 40px;
+           border-radius: 3px;
+       }
+       
+       .wrap {
+           position: relative;
+           margin-top: 20px;
+           left: 24%;
+       }
+       
+       .wrap h2 {
+           font-size: 28px;
+       }
+       
+       .wrap p {
+           font-size: 18px;
+       }
+       /*fim content*/
