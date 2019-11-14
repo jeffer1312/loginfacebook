@@ -16,7 +16,7 @@
        
        header {
            background-color: rgb(67, 82, 151);
-           padding: 8px 0;
+           padding: 20px 0;
        }
        
        .logo {
@@ -53,6 +53,11 @@
            padding: 0 7px;
        }
        
+       .form-element input[type=email],
+       .form-element input[type=password] {
+           padding-left: 5px;
+       }
+       
        .form-element input[type=submit] {
            background-color: rgb(74, 95, 177);
            cursor: pointer;
@@ -65,12 +70,6 @@
            background: rgb(49, 66, 124);
        }
        /* fim header*/
-       /*contet*/
-       
-       section.content {
-           background-color: rgb(233, 235, 238);
-           min-height: 700px;
-       }
        /*opçoes do flex*/
        
        .flex {
@@ -102,9 +101,19 @@
            flex-direction: column-reverse;
        }
        /*fim flex*/
+       /*contet*/
+       
+       section.content {
+           background: linear-gradient(white, #d3d8e8);
+           min-height: 650px;
+       }
        
        .w50 {
            width: 50%;
+       }
+       
+       .w100 {
+           width: 100%;
        }
        
        .img {
@@ -178,9 +187,8 @@
            margin-right: 10px;
            margin-bottom: 10px;
            padding-left: 5px;
-           width: 194px;
            height: 40px;
-           border-radius: 3px;
+           border-radius: 5px;
        }
        
        .cadastro input[type=email] {
@@ -198,6 +206,18 @@
            border-radius: 3px;
        }
        
+       .w50 input[type=submit] {
+           height: 40px;
+           background: linear-gradient(#67ae55, #578843);
+           cursor: pointer;
+           border: 0;
+           color: white;
+           width: 250px;
+           font-size: 19px;
+           margin-top: 15px;
+           border-radius: 5px;
+       }
+       
        .wrap {
            position: relative;
            margin-top: 20px;
@@ -211,4 +231,41 @@
        .wrap p {
            font-size: 18px;
        }
+       
+       .born p {
+           margin-top: 15px;
+       }
+       
+       .radiobox h2 {
+           font-size: 15px;
+       }
+       
+       .radiobox {
+           margin: 5px 10px
+       }
        /*fim content*/
+       /*linguas*/
+       
+       section.linguas {
+           padding: 15px 0;
+           background: white;
+       }
+       
+       .linguas .container {
+           padding-left: 8px;
+           padding-right: 8px;
+           padding-bottom: 10px;
+           border-bottom: 1px solid #ccc;
+       }
+       
+       section.linguas a {
+           padding-right: 15px;
+           font-size: 12px;
+           color: #365899;
+           text-decoration: none;
+       }
+       
+       section.linguas a.selected-lingua {
+           color: #737373;
+       }
+       /*fim linguas*/
