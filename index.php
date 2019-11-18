@@ -65,17 +65,18 @@
                         <p>É rápido e fácil</p>
                     </div>
 
-                    <form class="cadastro flex">
-                        <div class="w50">
-                            <input type="text" name="Nome" placeholder="Nome" required>
-                        </div>
-
-                        <div class="w50">
-                            <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+                    <form class="cadastro">
+                        <div class="flex row">
+                            <div class="w50 ">
+                                <input type="text" name="Nome" placeholder="Nome" required>
+                            </div>
+                            <div class="50">
+                                <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+                            </div>
                         </div>
                         <div class="w100">
                             <input type="email" name="email" placeholder="Celular ou email" required></div>
-                        <div class="w100">
+                        <div class="w100 ">
                             <input type="password" name="senha" placeholder="Nova senha" required>
                         </div>
 
